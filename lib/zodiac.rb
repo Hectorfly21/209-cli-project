@@ -1,10 +1,10 @@
 class Zodiac
-   attr_accessor :zodiac_name, :description_instances, :zodiac_url   
+   attr_accessor :zodiac_name, :description_instances, :second_url   
    @@all = []
-   def initialize(zodiac_name, description_instances, zodiac_url)
+   def initialize(zodiac_name, description_instances, second_url)
     @zodiac_name = zodiac_name
     @description_instances = description_instances
-    @zodiac_url = zodiac_url
+    @second_url = second_url
     @@all << self
    end
    def self.all

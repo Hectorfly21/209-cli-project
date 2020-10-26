@@ -21,7 +21,7 @@ class CLI
      sleep(1)
      puts "Done!"
      sleep(1)
-     Scraper.new.first_scrape
+     Scraper.new.scrapes
      puts ""
      puts "Would you like to see all the Zodiac Animals? (Yes or No)"
      user_input = gets.chomp
