@@ -12,7 +12,6 @@ class Scraper
       
    zodiac_elements.each do |zodiac_element|
    zodiac_name = zodiac_element.css('a')[0].children[0].attr('alt')
-   
    second_url = zodiac_element.css('a')[0].attr('href')
    
    second_html = open(@base_url + second_url)

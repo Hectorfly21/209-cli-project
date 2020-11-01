@@ -10,14 +10,20 @@ class Zodiac
    def self.all
     @@all
    end
-   def print_name
-    puts "===================================="
-    puts "Name: #{@zodiac_name.capitalize}"
-    puts "Description: #{description_instances.sentence}"
-    puts ""
+   def print_all_names
+    "#{@zodiac_name}"
+   end
+   def self.print_all_names_to_be_selected
+    @@all.each_with_index do |zodiac, index|
+    puts "#{index + 1}.#{zodiac.print_all_names.capitalize}" 
+     end
    end 
-   def self.print_all_names
-    @@all.each {|description| description.print_name}
+   
+   def print_all_descriptions
+    print_all_names
+    puts "======================="
+    puts "Name: #{zodiac_name.capitalize}"
+    puts "Description: #{description_instances.sentence}"
   end
 end
 
